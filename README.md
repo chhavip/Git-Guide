@@ -28,7 +28,7 @@ In order to work on an existing project that is not owned by you, follow the fol
   NOTE: This by default pushes all your local branches to remote with the same name. We will go through branching later.
 
 
-##Setting up Upstreams
+##Setting up Upstream
 When a repository is cloned, it has a default remote called `origin` that points to your fork on GitHub, not the original repository it was forked from. To keep track of the original repository, you should add another remote named `upstream`:
 
 1. Open terminal or git bash in your local repository and type:
