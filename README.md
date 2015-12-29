@@ -33,17 +33,17 @@ When a repository is cloned, it has a default remote called `origin` that points
 
 1. Open terminal or git bash in your local repository and type:
 
-   `git remote add upstream https://github.com/systers/powerup-android.git`
+   `git remote add upstream <url of original project>`
   
 1. Run `git remote -v` to check the status, you should see something like the following:
 
-  > origin    https://github.com/YOUR_USERNAME/powerup-android.git (fetch)
+  > origin    https://github.com/YOUR_USERNAME/project-name.git (fetch)
   
-  > origin    https://github.com/YOUR_USERNAME/powerup-android.git (push)
+  > origin    https://github.com/YOUR_USERNAME/project-name.git (push)
   
-  > upstream  https://github.com/systers/powerup-android.git (fetch)
+  > upstream  https://github.com/OWNER_USERNAME/project-name.git (fetch)
   
-  > upstream  https://github.com/systers/powerup-android.git (push)
+  > upstream  https://github.com/OWNER_USERNAME/project-name.git (push)
 
 1. To update your local copy with remote changes, run the following:
 
