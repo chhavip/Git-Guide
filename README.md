@@ -17,7 +17,15 @@ In order to work on an existing project that is not owned by you, follow the fol
 2. Copy the HTTPS link of the project and go to the location through terminal or command prompt where you want to have the repository locally
 3. Run `git clone <link to your fork>`. This will give you a local copy of the project which you can work with.
 4. Any changes in the local repository can be tracked by running `git status` in that directory. Files in red will be the ones that have been modified, added or deleted.
-5. To have your remote repository(the one hosted online also referred to as *origin*) reflect the changes, do `git add <file-path>` for all the files who's changes you wish to see in the remote. You can also run `git add .` to add all the files that have been changed (not advisable though). Run `git status` once again and you will see the files that you have added in green.
-6. 
+5. To have your remote repository(the one hosted online also referred to as *origin*) reflect the changes, do 
+`git add <file-path>` for all the files who's changes you wish to see in the remote. You can also run `git add .` to add all the files that have been changed (not advisable though).
+6. Run `git status` once again and you will see the files that you have added in green.
+7. In case you need to un-add any file, run `git reset HEAD -- <file path>`
+8. To commit the changes (equivalent to locking down the changes you have made), run `git commit -m "Your commit message"`
+9. So far you have made and saved the changes in your local repository, to send the changes to your fork in github, run
+`git push` which will ask for your username and password. Fill and you are ready to go. 
+
+  NOTE: This by default pushes all your local branches to remote with the same name. We will go through branching later.
+
 
 ##Setting up Upstream
