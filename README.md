@@ -1,5 +1,11 @@
-# Git-Guide
+# Git-Guide For Open Source Contributions
+
 A collection of commands needed while working on git
+
+##Common Terms
+Some of the basic terms used while working with git are:
+* *Fork*: This is how you make a copy of a project owned by someone else. A person or organisation. Apart from the owner of the repository, no one is allowed to make direct changes to the project. So fork is used to make a copy of the project that is owned by you.
+* *Clone*: You got the project in your account, now what? A clone is just that, a copy. It does not care about ownership. It is aimed to bring the copy of the project hosted on github or any other VCS system in your machine. This is where you will make the changes and later update your remote project
 
 ##Set Up
 In order to set up the user through terminal:
@@ -82,3 +88,10 @@ This will push the changes you made to your fork on github under the branch name
    After deleting the local branch, if you wish to delete the remote branch of the same name, use:
 
   `git push origin :the_remote_branch` but be careful while using this.
+  
+##Squashing Commits
+
+Often it is required while contributing that your entire feature change is in the form of one single commit.
+
+##Disclaimer:
+This guide is aimed particularly at people starting open source contribution for the first time and aims to familiarise them with required patterns and expected contribution behaviour.
