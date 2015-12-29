@@ -10,7 +10,7 @@ In order to set up the user through terminal:
 
 This is the user your commits and PR will be shown through.
 
-##Fork, Clone,Add, Commit and Push
+##Fork, Clone, Add, Commit and Push
 In order to work on an existing project that is not owned by you, follow the following steps:
 
 1. `Fork` the project from the respective repository. This will redirect you to your fork of the project which is basically a copy of the original project but you are its owner.
@@ -28,4 +28,27 @@ In order to work on an existing project that is not owned by you, follow the fol
   NOTE: This by default pushes all your local branches to remote with the same name. We will go through branching later.
 
 
-##Setting up Upstream
+##Setting up Upstreams
+When a repository is cloned, it has a default remote called `origin` that points to your fork on GitHub, not the original repository it was forked from. To keep track of the original repository, you should add another remote named `upstream`:
+
+1. Open terminal or git bash in your local repository and type:
+
+   `git remote add upstream https://github.com/systers/powerup-android.git`
+  
+1. Run `git remote -v` to check the status, you should see something like the following:
+
+  > origin    https://github.com/YOUR_USERNAME/powerup-android.git (fetch)
+  
+  > origin    https://github.com/YOUR_USERNAME/powerup-android.git (push)
+  
+  > upstream  https://github.com/systers/powerup-android.git (fetch)
+  
+  > upstream  https://github.com/systers/powerup-android.git (push)
+
+1. To update your local copy with remote changes, run the following:
+
+   `git fetch upstream`
+
+   `git merge upstream/master`
+
+   This will give you an exact copy of the current remote, make sure you don't have any local changes.
