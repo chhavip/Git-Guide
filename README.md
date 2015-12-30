@@ -91,8 +91,24 @@ This will push the changes you made to your fork on github under the branch name
   `git push origin :the_remote_branch` but be careful while using this.
   
 ##Squashing Commits
+Often it is required while contributing that your entire feature change is in the form of one single commit, this is where squashing comes in. Be aware of the type of commits you are trying to squash. There can be two:
+* Commits in your local repository
+* Commits you have already pushed to remote
 
-Often it is required while contributing that your entire feature change is in the form of one single commit.
+First of all be sure to run `git log` and see your recent commit history, this will help you decide which commits you wish to squash.
+If for example you wish to squash the last two commits into a single one, run:
+
+`git checkout my_branch` to make sure you are on your required branch
+
+`git reset --soft HEAD~2` where 2 represents the number of commits to be sqaushed, can be replaced with your need
+
+`git commit -m "New commit message to represent the squashed commits"` 
+
+The above two instruction will locally squash the number of commits you chose to. In case you had already pushed the commits to your remote repository, run the following command to make your remote reflect the changes:
+
+`git push --force origin my_branch` 
+
+This is a forced update that makes the remote repository squash the commits into one.
 
 ##Disclaimer:
 This guide is aimed particularly at people starting open source contribution for the first time and aims to familiarise them with required patterns and expected contribution behaviour.
