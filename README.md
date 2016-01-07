@@ -117,5 +117,23 @@ The above two instruction will locally squash the number of commits you chose to
 
 This is a forced update that makes the remote repository squash the commits into one.
 
+##Undoing Commits
+Undoing commits means to remove the last commit you made from your history tree. This is not needed usually but more in the case a commit was made by mistake or was not complete. The following steps should usually be followed before having pushed to remote repository but you can force push your changes to reflect them on the remote.
+Now, getting down to undoing commits and the different scenarios:
+```  
+    A-B-C
+        ↑
+      master
+```
+Suppose C was your last commit and you want to go back to B, removing any work that you done on the way from B to C.
+The command for that is:
+`git reset --hard HEAD~1` 
+
+The result is:
+```  (F)
+    A-B
+      ↑
+    master
+```
 ##Disclaimer:
 This guide is aimed particularly at people starting open source contribution for the first time and aims to familiarise them with required patterns and expected contribution behaviour.
