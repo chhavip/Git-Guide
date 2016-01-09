@@ -125,6 +125,7 @@ Now, getting down to undoing commits and the different scenarios:
         ↑
       master
 ```
+###Completely Removing the last Commit
 Suppose C was your last commit and you want to go back to B, removing any work that you done on the way from B to C.
 The command for that is:
 `git reset --hard HEAD~1` 
@@ -135,5 +136,25 @@ The result is:
       ↑
     master
 ```
+
+###Keeping the work of the last Commit
+Now if you want just remove the commit but keep all the work you had done till that commit then starting from:
+```
+   (F)
+A-B-C
+    ↑
+  master
+  ``` 
+You need to run:
+`git reset HEAD~1`
+This will result in the following:
+```
+   (F)
+A-B-C
+  ↑
+master
+```
+In both cases HEAD is pointer to the last commit and reset tells git to move it back one place. If you dont use `--hard`, your files will remain as they were and running a `git status` will show you all your changes preserved but the commit will be lost.
+
 ##Disclaimer:
 This guide is aimed particularly at people starting open source contribution for the first time and aims to familiarise them with required patterns and expected contribution behaviour.
