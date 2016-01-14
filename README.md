@@ -156,5 +156,27 @@ master
 ```
 In both cases HEAD is pointer to the last commit and reset tells git to move it back one place. If you dont use `--hard`, your files will remain as they were and running a `git status` will show you all your changes preserved but the commit will be lost.
 
+##Merge Conflicts
+
+###Why do they occur?
+When working on a shared project, you and your fellow collaborators are bound to make changes to the same file unkowing to each other and one of you might push his/her changes to the original repository while the other is in middle of his/her changes. Now when the latter person will try to fetch the new code into his/her local repository, git won't know who's changes to keep as a given file has been modified by both. 
+
+A typical merge conflict message looks like this:
+```
+$ git checkout style
+Switched to branch 'style'
+$ git merge master
+Auto-merging lib/hello.py
+CONFLICT (content): Merge conflict in lib/hello.py
+Automatic merge failed; fix conflicts and then commit the result.
+``` 
+Now your hello.py has merge conflicts as it was modified by you and someone else working on the project.
+
+###Removing Merge Conflicts
+There are two cases where merge conflicts occur
+
+* A file is modified by both users
+* A file is modified by one user while deleted by the other
+
 ##Disclaimer:
 This guide is aimed particularly at people starting open source contribution for the first time and aims to familiarise them with required patterns and expected contribution behaviour.
