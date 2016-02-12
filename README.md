@@ -117,6 +117,25 @@ The above two instruction will locally squash the number of commits you chose to
 
 This is a forced update that makes the remote repository squash the commits into one.
 
+##Updating your work while Avoiding Merge Commits
+This is in continuation with requirement of having a single commit in your PR, suppose you did some work and submitted a PR to the main repository but before your request could be merged, changes were made by other developers in the repository and now your PR presents merge conflicts. You could fetch the work, resolve merge conflicts and push again but that will lead to `MERGE COMMIT` that is undesirable at times. The flow below can be followed to prevent the same:
+
+This assumes the following:
+* You have submitted a PR for a feature
+* Changes have been made to remote before your PR got merged and now there are merge conflicts between your PR and remote
+
+The steps to follow:
+* Checkout your branch with the features required `git checkout my_branch` 
+* Fetch changes from remote `git fetch upstream`
+* Stash local changes(if any) `git stash` 
+* Rebase to the latest branch in upstream (let it be master in our case) `git rebase upstream/master`
+* The following two steps are required only if merge conflicts occur: 
+* If any merge conflicts are occuring, fix them in the project then add the files by using `git add <file name>` or `git checkout -- <file name>` (if you dont want your local changes)
+* After the changes have been fixed run `git rebase --continue`
+* Now the remote changes have been applied and your work has been applied on top of it
+* Force push to your branch to update the PR by using `git push --force origin my_branch`
+
+
 ##Undoing Commits
 Undoing commits means to remove the last commit you made from your history tree. This is not needed usually but more in the case a commit was made by mistake or was not complete. The following steps should usually be followed before having pushed to remote repository but you can force push your changes to reflect them on the remote.
 Now, getting down to undoing commits and the different scenarios:
