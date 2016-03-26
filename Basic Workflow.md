@@ -32,3 +32,30 @@ Only one person needs to create the initial project and push it to the remote. L
 
 That was it! Now all three, Mo, Darius and Meggie have a syncronised copy of the project and can start working locally. To push their changes to the remote they will need to follow the **Synchronisation** process as described below.
 
+##Synchronising the Work
+Git is very particular about how you collaborate with others and thus has a strict protocol to follow when uploading your work to the remote server:
+1. You need to pull the work done on the remote server. You **cannot** push your local changes until and unless you have all the changes made on the remote repository.
+2. Add the files you need to send.
+3. Commit the work.
+4. Push.
+
+Now let us break down each of the steps.
+1. Pulling remote work: 
+ * Assuming you have made some changes to your local repository and when you run `git status` you see some files in red indicating your changes.
+ * You first of all need to go back to a version of your local repository that was synced to the remote. For that run `git stash`. Now when you run `git status` you won't be able to see any files you made changes to. (Any newly added files will still be seen)
+ * Now run `git pull origin master` to pull the work done on remote server to your local repository. It should show some files with additions and subtractions if changes have been made remotely, if not, it will return a newline.
+ * Now you want all your precious work back. Run `git stash pop` and you will see all your files with the changes.
+We are synced and up to date with the remote repository.
+
+2. Add your files
+ * Run `git add <file name>` to add the files you wish to send.
+ * Run `git add .` to add all the files you made changes to (Not recommended).
+
+3. Commit your changes 
+ * Run `git commit -m "Commit Message"` (Make the message more meaningful indicating your changes)
+
+4. Push your changes
+ * Run `git push origin master`
+ * Ideally git should ask for your github username and password everytime you push if you haven't saved it globally (to be covered later).
+
+And you are done! Now you can push and pull your changes anytime you want it. If you do not wish to push your changes and just pull the changes made at remote, follow only **step 1** of the above.
