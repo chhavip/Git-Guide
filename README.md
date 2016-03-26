@@ -1,7 +1,8 @@
 # Git-Guide For Open Source Contributions
 
-A collection of commands needed while working on git
+To learn about basic workflow when working on collaborative projects, read the common terms below and follow [this](https://github.com/chhavip/Git-Guide/blob/master/Basic%20Workflow.md).
 
+A collection of commands needed while working on git
 ##Common Terms
 Some of the basic terms used while working with git are:
 * *Fork*: This is how you make a copy of a project owned by someone else. A person or organisation. Apart from the owner of the repository, no one is allowed to make direct changes to the project. So fork is used to make a copy of the project that is owned by you.
