@@ -7,7 +7,7 @@ This page will outline a basic workflow to use when working on collaborative pro
 ##Setting Up The Project
 Only one person needs to create the initial project and push it to the remote. Let us assume it is going to be Mo.
 
-### Steps needed to be followed by Mo are:
+### Mo's Work:
 * Create an account on github. (everyone needs to do this as well)
 * Create a new Repository by clicking the **NEW** repository button. 
 * Give it a name.
@@ -24,7 +24,7 @@ Only one person needs to create the initial project and push it to the remote. L
   * Run `git push -u origin master` (The -u is required only on the first commit, afterwards you will only need to use `git push origin master`). What this command does is to push your local changes to the origin (which we added few steps before) and to the **master** branch (All we need to know about branches right now is that git works in form of branches and if none other is specified, all the work takes place on the master branch).
   * After doing this, Mo's work is finished (which was a lot!)
 
-### Steps to follow for Meggie and Darius to get the project uploaded by Mo:
+### Meggie and Darius's Work:
   * First of all you will be glad to know that they **dont** need to create a local project, they can get the project uploaded by Mo  in their machines.
  * Now suppose Meggie wants the project to be in the `/Documents/PythonProjects` directory, she has to go to that directory in her git bash or terminal.
   * (One Time Step) Run `git clone URL` where URL is the same URL as used by Mo to upload the project. This is done just once to get a copy of the remote project locally and doesn't have to be done again.
