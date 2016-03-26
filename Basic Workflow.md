@@ -40,6 +40,7 @@ Git is very particular about how you collaborate with others and thus has a stri
 4. Push.
 
 Now let us break down each of the steps.
+
 1. Pulling remote work: 
  * Assuming you have made some changes to your local repository and when you run `git status` you see some files in red indicating your changes.
  * You first of all need to go back to a version of your local repository that was synced to the remote. For that run `git stash`. Now when you run `git status` you won't be able to see any files you made changes to. (Any newly added files will still be seen)
