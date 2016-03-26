@@ -10,4 +10,7 @@ Only one person needs to create the initial project and push it to the remote. L
 * Add Meggie and Darius as **Collaborators**(to give them write permissions to this repository) by going in Settings of this repository.
 * Open git bash/terminal and go into the directory where your local project exists(the one on which you plan to work on, create it like you would create any other local project of that kind). Lets say the project they plan to work exists in Mo's machine at `/Documents/PythonProjects/mysite`. The terminal would look something like: 
 * The steps to follow for Mo here are
-* * `git init` So that git commands start working in this directory
+  * `git init` So that git commands start working in this directory
+  * `git remote add origin URL` Here URL refers to the URL where you created the new repository in github. This is used to connect your local folder(mysite) to the one on github.
+  * Now when you run `git status` you are able to see all the files that exist in the local folder. As they come in red, it means they are not ready to be sent to the remote. We need tou change that
+  * Run `git add .` (to add all files at once, in future you can add one file at a time by running `git add <complete path to required file>` {without brackets})
