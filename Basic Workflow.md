@@ -41,21 +41,21 @@ Git is very particular about how you collaborate with others and thus has a stri
 
 Now let us break down each of the steps.
 
-1. Pulling remote work: 
+1. **Pulling remote work:** 
  * Assuming you have made some changes to your local repository and when you run `git status` you see some files in red indicating your changes.
  * You first of all need to go back to a version of your local repository that was synced to the remote. For that run `git stash`. Now when you run `git status` you won't be able to see any files you made changes to. (Any newly added files will still be seen)
  * Now run `git pull origin master` to pull the work done on remote server to your local repository. It should show some files with additions and subtractions if changes have been made remotely, if not, it will return a newline.
  * Now you want all your precious work back. Run `git stash pop` and you will see all your files with the changes.
 We are synced and up to date with the remote repository.
 
-2. Add your files
+2. **Add your files**
  * Run `git add <file name>` to add the files you wish to send.
  * Run `git add .` to add all the files you made changes to (Not recommended).
 
-3. Commit your changes 
+3. **Commit your changes** 
  * Run `git commit -m "Commit Message"` (Make the message more meaningful indicating your changes)
 
-4. Push your changes
+4. **Push your changes**
  * Run `git push origin master`
  * Ideally git should ask for your github username and password everytime you push if you haven't saved it globally (to be covered later).
 
