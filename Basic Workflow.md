@@ -4,15 +4,17 @@
 ##Introduction
 This page will outline a basic workflow to use when working on collaborative projects, wherein one person sets up the initial project and others are able to work on the same. Let us assume the situtation where there are three people Mo, Meggie and Darius who need to work on a project together and would like to use git/github for collaboration. Assuming they all have gitbash(windows) or git in terminal(linux) or on Mac, these are the steps to follow:
 
-###Setting Up The Project
-Only one person needs to create the initial project and push it to the remote. Let us assume it is going to be Mo. Steps needed to be followed by Mo are:
-* Create an account on github.
+##Setting Up The Project
+Only one person needs to create the initial project and push it to the remote. Let us assume it is going to be Mo.
+
+### Steps needed to be followed by Mo are:
+* Create an account on github. (everyone needs to do this as well)
 * Create a new Repository by clicking the **NEW** repository button. 
 * Give it a name.
 * See the initial page and locate the https URL where this repository exists. 
 * Add Meggie and Darius as **Collaborators**(to give them write permissions to this repository) by going in Settings of this repository.
 * Open git bash/terminal and go into the directory where your local project exists(the one on which you plan to work on, create it like you would create any other local project of that kind). Lets say the project they plan to work exists in Mo's machine at `/Documents/PythonProjects/mysite`. The terminal would look something like: 
-* The steps to follow for Mo here are
+* The following procedure for Mo is:
   * `git init` So that git commands start working in this directory
   * `git remote add origin URL` Here URL refers to the URL where you created the new repository in github. This is used to connect your local folder(mysite) to the one on github.
   * Now when you run `git status` you are able to see all the files that exist in the local folder. As they come in red, it means they are not ready to be sent to the remote. We need tou change that
@@ -22,7 +24,7 @@ Only one person needs to create the initial project and push it to the remote. L
   * Run `git push -u origin master` (The -u is required only on the first commit, afterwards you will only need to use `git push origin master`). What this command does is to push your local changes to the origin (which we added few steps before) and to the **master** branch (All we need to know about branches right now is that git works in form of branches and if none other is specified, all the work takes place on the master branch).
   * After doing this, Mo's work is finished (which was a lot!)
 
- *Steps to follow for Meggie and Darius to get the project uploaded by Mo:
+### Steps to follow for Meggie and Darius to get the project uploaded by Mo:
   * First of all you will be glad to know that they **dont** need to create a local project, they can get the project uploaded by Mo  in their machines.
  * Now suppose Meggie wants the project to be in the `/Documents/PythonProjects` directory, she has to go to that directory in her git bash or terminal.
   * (One Time Step) Run `git clone URL` where URL is the same URL as used by Mo to upload the project. This is done just once to get a copy of the remote project locally and doesn't have to be done again.
