@@ -13,4 +13,9 @@ Only one person needs to create the initial project and push it to the remote. L
   * `git init` So that git commands start working in this directory
   * `git remote add origin URL` Here URL refers to the URL where you created the new repository in github. This is used to connect your local folder(mysite) to the one on github.
   * Now when you run `git status` you are able to see all the files that exist in the local folder. As they come in red, it means they are not ready to be sent to the remote. We need tou change that
-  * Run `git add .` (to add all files at once, in future you can add one file at a time by running `git add <complete path to required file>` {without brackets})
+  * Run `git add .` (to add all files at once, in future you can add one file at a time by running `git add <complete path to required file>` {without brackets}). Now when you run `git status` you will be able to see your added files in green.
+  * Now these files need to be committed as only files bound by a commit are sent to the server, added files are not. This is used that in case you have made changes to 5 files and need to send only 3 of them, you can add only those three and then commit them to finalise their sending.
+  * Run `git commit -m "Commit Message"` The message logically explains what changes you made in this commit.
+  * Run `git push -u origin master` (The -u is required only on the first commit, afterwards you will only need to use `git push origin master`). What this command does is to push your local changes to the origin (which we added few steps before) and to the **master** branch (All we need to know about branches right now is that git works in form of branches and if none other is specified, all the work takes place on the master branch).
+  * After doing this, Mo's work is finished (which was a lot!)
+
