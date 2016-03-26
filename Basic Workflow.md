@@ -7,4 +7,7 @@ Only one person needs to create the initial project and push it to the remote. L
 * Create a new Repository by clicking the **NEW** repository button. 
 * Give it a name.
 * See the initial page and locate the https URL where this repository exists. 
-* Add Meggie and Darius as collaborators by going in Settings of this repository.
+* Add Meggie and Darius as **Collaborators**(to give them write permissions to this repository) by going in Settings of this repository.
+* Open git bash/terminal and go into the directory where your local project exists(the one on which you plan to work on, create it like you would create any other local project of that kind). Lets say the project they plan to work exists in Mo's machine at `/Documents/PythonProjects/mysite`. The terminal would look something like: 
+* The steps to follow for Mo here are
+* * `git init` So that git commands start working in this directory
