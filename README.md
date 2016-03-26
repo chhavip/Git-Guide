@@ -195,7 +195,7 @@ Now your hello.py has merge conflicts as it was modified by you and someone else
 There are two cases where merge conflicts occur
 
 * A file is modified by both users
-* A file is modified by one user while deleted by the other
+* A file is modified by one or the other user while deleted by the other
 
 ##Disclaimer:
 This guide is aimed particularly at people starting open source contribution for the first time and aims to familiarise them with required patterns and expected contribution behaviour.
