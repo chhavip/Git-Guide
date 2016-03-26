@@ -22,11 +22,11 @@ Only one person needs to create the initial project and push it to the remote. L
   * Run `git push -u origin master` (The -u is required only on the first commit, afterwards you will only need to use `git push origin master`). What this command does is to push your local changes to the origin (which we added few steps before) and to the **master** branch (All we need to know about branches right now is that git works in form of branches and if none other is specified, all the work takes place on the master branch).
   * After doing this, Mo's work is finished (which was a lot!)
 
-*Steps to follow for Meggie and Darius to get the project uploaded by Mo:
- * First of all you will be glad to know that they **dont** need to create a local project, they can get the project uploaded by Mo in their machines.
+ *Steps to follow for Meggie and Darius to get the project uploaded by Mo:
+  * First of all you will be glad to know that they **dont** need to create a local project, they can get the project uploaded by Mo  in their machines.
  * Now suppose Meggie wants the project to be in the `/Documents/PythonProjects` directory, she has to go to that directory in her git bash or terminal.
- * (One Time Step) Run `git clone URL` where URL is the same URL as used by Mo to upload the project. This is done just once to get a copy of the remote project locally and doesn't have to be done again.
- * And voila! The project is with Meggie and she can run it like any other project of that kind. After making any changes to the project she will have to got to the directory `/Documents/PythonProjects/mysite` (all git commands are run from this directory henceforth, this can be the path to your own directory).
+  * (One Time Step) Run `git clone URL` where URL is the same URL as used by Mo to upload the project. This is done just once to get a copy of the remote project locally and doesn't have to be done again.
+  * And voila! The project is with Meggie and she can run it like any other project of that kind. After making any changes to the project she will have to got to the directory `/Documents/PythonProjects/mysite` (all git commands are run from this directory henceforth, this can be the path to your own directory).
 
 That was it! Now all three, Mo, Darius and Meggie have a syncronised copy of the project and can start working locally. To push their changes to the remote they will need to follow the **Synchronisation** process as described below.
 
