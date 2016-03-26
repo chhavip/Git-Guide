@@ -5,6 +5,8 @@ To learn about basic workflow when working on collaborative projects, read the c
 A collection of commands needed while working on git
 ##Common Terms
 Some of the basic terms used while working with git are:
+* *Repository* : A basic folder or a collection of files that represents one project. The name of this repository is **Git-Guide**. When you clone, you clone an entire repository and every repository is identified by a unique URL.
+* *Local Repository* : The project folder which exists in your machine, locally. It is where you make your changes and push them to the github repository. No one can make changes to your local repository directly other than yourself, you need to sync (connect) this local repository with a repository on github (or any VCS system) in order to push and pull changes.
 * *Fork*: This is how you make a copy of a project owned by someone else. A person or organisation. Apart from the owner of the repository, no one is allowed to make direct changes to the project. So fork is used to make a copy of the project that is owned by you.
 * *Clone*: You got the project in your account, now what? A clone is just that, a copy. It does not care about ownership. It is aimed to bring the copy of the project hosted on github or any other VCS system in your machine. This is where you will make the changes and later update your remote project
 * *Commit*: This is a checkpoint in your project history. All the commits are recorded in git logs with the description provided by user. After you add, modify or remove any files, a commit is made to save these changes in history.
