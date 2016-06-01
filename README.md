@@ -2,13 +2,20 @@
 
 ##Table of Contents:
 * [Common Terms](#common-terms)
+
 * [Setting up - First Time User](#set-up)
+
 * [Forking an existing project and making changes](#forking-a-project-and-making-changes)
+
 * [Connecting to original project](#setting-up-upstream)
+
 * [Branching and Pull Requests](#branching-and-pull-requests)
+
 * [Squashing Commits](#squashing-commits)
-* [Avoiding Merge Conflicts](#avoiding-merge-conflicts)
-* [Undoing Commits Made](#undoing-commits)
+
+* [Avoiding Merge Conflicts](#avoiding-merge-commits)
+
+* [Undoing Commits](#undoing-commits)
 
 
 To learn about basic workflow when working on collaborative projects, read the common terms below and follow [this](https://github.com/chhavip/Git-Guide/blob/master/Basic%20Workflow.md).
