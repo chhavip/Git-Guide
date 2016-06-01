@@ -2,9 +2,10 @@
 
 ##Table of Contents:
 * [Common Terms](#common-terms)
-* [Setting up First Time User](#set-up)
+* [Setting up - First Time User](#set-up)
 * [Forking an existing project and making changes](#forking-a-project-and-making-changes)
 * [Connecting to original project](#setting-up-upstream)
+* [Branching and Pull Requests](#branching-and-pull-requests)
 
 
 To learn about basic workflow when working on collaborative projects, read the common terms below and follow [this](https://github.com/chhavip/Git-Guide/blob/master/Basic%20Workflow.md).
@@ -104,7 +105,7 @@ When a repository is cloned, it has a default remote called `origin` that points
    This will give you an exact copy of the current remote, make sure you don't have any local changes.
 
 
-##All About Branching
+##Branching and Pull Requests
 
 Branches exist in github to enable you to work on different features simultaneously without they interfering with each other and also to preserve the master branch. Usually the master branch of your project should be kept clean and no feature should be developed directly in the master branch.  Follow the following steps to create branches and be able to sync them:
 
