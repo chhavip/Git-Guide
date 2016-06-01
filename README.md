@@ -2,7 +2,8 @@
 
 ##Table of Contents:
 * [Common Terms](#common-terms)
-* [Setting up a User](#set-up)
+* [Setting up First Time User](#set-up)
+* [Forking an existing project and making changes](#forking-a-project-and-making-changes)
 * [Connecting to original project](#setting-up-upstream)
 
 
