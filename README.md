@@ -2,6 +2,8 @@
 This is a guide containing tools and tricks every developer starting on the open source journey will need. It can also serve as a quick reference for some of the tricky commands for the pros. Feel free to suggest changes or contribute!
 
 ##Table of Contents:
+* [Setting Up Git/Github on your machine](https://github.com/chhavip/Git-Guide/blob/master/Setting%20Up.md)
+
 * [Common Terms](#common-terms)
 
 * [Setting up - First Time User](#set-up)
