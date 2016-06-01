@@ -1,4 +1,5 @@
 # Git-Guide For Open Source Contributions
+This is a guide containing tools and tricks every developer starting on the open source journey will need. It can also serve as a quick reference for some of the tricky commands for the pros. Feel free to suggest changes or contribute!
 
 ##Table of Contents:
 * [Common Terms](#common-terms)
