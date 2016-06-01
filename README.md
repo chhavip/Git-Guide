@@ -7,6 +7,8 @@
 * [Connecting to original project](#setting-up-upstream)
 * [Branching and Pull Requests](#branching-and-pull-requests)
 * [Squashing Commits](#squashing-commits)
+* [Avoiding Merge Conflicts](#avoiding-merge-conflicts)
+* [Undoing Commits Made](#undoing-commits)
 
 
 To learn about basic workflow when working on collaborative projects, read the common terms below and follow [this](https://github.com/chhavip/Git-Guide/blob/master/Basic%20Workflow.md).
@@ -155,7 +157,7 @@ The above two instruction will locally squash the number of commits you chose to
 
 This is a forced update that makes the remote repository squash the commits into one.
 
-###Updating your work while Avoiding Merge Commits
+###Avoiding Merge Commits
 This is in continuation with requirement of having a single commit in your PR, suppose you did some work and submitted a PR to the main repository but before your request could be merged, changes were made by other developers in the repository and now your PR presents merge conflicts. You could fetch the work, resolve merge conflicts and push again but that will lead to `MERGE COMMIT` that is undesirable at times. The flow below can be followed to prevent the same:
 
 This assumes the following:
