@@ -22,10 +22,11 @@ This is a guide containing tools and tricks every developer starting on the open
 
 * [Merge Conflicts - why and how to remove](#merge-conflicts)
 
+<hr>
+Starting your own project with others? Learn about the [Basic Workflow](https://github.com/chhavip/Git-Guide/blob/master/Basic%20Workflow.md) when working on collaborative projects.
 
-To learn about basic workflow when working on collaborative projects, read the common terms below and follow [this](https://github.com/chhavip/Git-Guide/blob/master/Basic%20Workflow.md).
+<hr>
 
-A collection of commands needed while working on git
 ##Common Terms
 Some of the basic terms used while working with git are:
 * **Repository** : A basic folder or a collection of files that represents one project. The name of this repository is **Git-Guide**. When you clone, you clone an entire repository and every repository is identified by a unique URL.
