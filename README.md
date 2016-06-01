@@ -13,9 +13,11 @@
 
 * [Squashing Commits](#squashing-commits)
 
-* [Avoiding Merge Conflicts](#avoiding-merge-commits)
+* [Avoiding Merge Commits](#avoiding-merge-commits)
 
 * [Undoing Commits](#undoing-commits)
+
+* [Merge Conflicts - why and how to remove](#merge-conflicts)
 
 
 To learn about basic workflow when working on collaborative projects, read the common terms below and follow [this](https://github.com/chhavip/Git-Guide/blob/master/Basic%20Workflow.md).
