@@ -1,5 +1,11 @@
 # Git-Guide For Open Source Contributions
 
+##Table of Contents:
+* [Common Terms](#common-terms)
+* [Setting up a User](#set-up)
+* 
+
+
 To learn about basic workflow when working on collaborative projects, read the common terms below and follow [this](https://github.com/chhavip/Git-Guide/blob/master/Basic%20Workflow.md).
 
 A collection of commands needed while working on git
@@ -39,7 +45,7 @@ In order to set up the user through terminal:
 
 This is the user your commits and PR will be shown through.
 
-##Fork, Clone, Add, Commit and Push
+##Forking a Project and Making Changes
 In order to work on an existing project that is not owned by you, follow the following steps:
 
 1. `Fork` the project from the respective repository. This will redirect you to your fork of the project which is basically a copy of the original project but you are its owner.
