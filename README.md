@@ -3,7 +3,7 @@
 ##Table of Contents:
 * [Common Terms](#common-terms)
 * [Setting up a User](#set-up)
-* 
+* [Connecting to original project](#setting-up-upstream)
 
 
 To learn about basic workflow when working on collaborative projects, read the common terms below and follow [this](https://github.com/chhavip/Git-Guide/blob/master/Basic%20Workflow.md).
