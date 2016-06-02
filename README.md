@@ -1,6 +1,11 @@
 # Git-Guide For Open Source Contributions
 This is a guide containing tools and tricks every developer starting on the open source journey will need. It can also serve as a quick reference for some of the tricky commands for the pros. Feel free to suggest changes or contribute!
 
+<hr>
+Starting your own project with others? Learn about the [Basic Workflow](https://github.com/chhavip/Git-Guide/blob/master/Basic%20Workflow.md) when working on collaborative projects.
+
+<hr>
+
 ##Table of Contents:
 * [Setting Up Git/Github on your machine](https://github.com/chhavip/Git-Guide/blob/master/Setting%20Up.md)
 
@@ -22,10 +27,7 @@ This is a guide containing tools and tricks every developer starting on the open
 
 * [Merge Conflicts - why and how to remove](#merge-conflicts)
 
-<hr>
-Starting your own project with others? Learn about the [Basic Workflow](https://github.com/chhavip/Git-Guide/blob/master/Basic%20Workflow.md) when working on collaborative projects.
 
-<hr>
 
 ##Common Terms
 Some of the basic terms used while working with git are:
