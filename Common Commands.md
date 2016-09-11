@@ -1,5 +1,5 @@
 #Common Commands 
-----
+
 ##Making changes
 * Adding Files
  * `git add <filename>` : 
@@ -21,4 +21,9 @@
 * `git log` : View summary of all commits made so far in the current branch.
 
 
+##Sending and Receiving Files
+* `git fetch` : Fetch changes from remote repository
+* 
+
+* `git grep <search term>` : Search the current branch for given term
 
