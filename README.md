@@ -120,26 +120,30 @@ When a repository is cloned, it has a default remote called `origin` that points
 
    `git merge upstream/master`
 
-   This will give you an exact copy of the current remote, make sure you don't have any local changes.
+   As you may have guessed already, quicker way to the same would be `git pull upstream master`, because Pull is essentially a Fetch operation followed by Merge operation. 
+
+   This will give you an exact copy of the current remote, but make sure you don't have any local changes.
 
 
 ##Branching and Pull Requests
 
 Branches exist in github to enable you to work on different features simultaneously without they interfering with each other and also to preserve the master branch. Usually the master branch of your project should be kept clean and no feature should be developed directly in the master branch.  Follow the following steps to create branches and be able to sync them:
 
-1. Make sure you are in the master branch `git checkout master`.
+1. Make sure you are in the master branch : `git checkout master`.
 
-2. Sync your copy `git pull`
+2. Sync your copy with remote copy : `git pull`.
 
-3. Create a new branch with a meaningful name `git checkout -b branch_name`
+3. Create a new branch with a meaningful name : `git checkout -b branch_name`.
 
-4. Add the files you changed `git add file_name` (avoid using `git add .`)
+4. Add the files you changed : `git add file_name` (avoid using `git add .`). This is called "staging" the files.
 
-5. Commit your changes `git commit -m "Message briefly explaining the feature"`
+5. Commit your changes `git commit -a -m "Message briefly explaining the feature"`. [Commits all the staged files](https://gist.github.com/sakshamsaxena/5c83df15bc2b17f3c72399860b31924b) (`-a` stands for committing all staged files). You can skip the `-a` switch and mention files to be committed otherwise.
 
 6. Push to your repo `git push origin branch-name`
 
-This will push the changes you made to your fork on github under the branch name you gave. To have the owner of the original project review your changes, create a Pull Request explaining the changes you made. If it is satisfactory, it will be merged with the original project.
+This will push the changes you made to your fork on github under the branch name you gave.  
+
+To have the owner of the original project review your changes, create a Pull Request explaining the changes you made. If it is satisfactory, it will be merged with the original project.
 
 ###Common Branch Commands:
 
@@ -147,7 +151,7 @@ This will push the changes you made to your fork on github under the branch name
 
   `git branch -a` will give you all the branches your local and remote repositories have
 
-  `git branch -d the_local_branch` will delete a local branch that you had by the given name. Make sure you dont have any lose    ends in the branch or a delte won't be allowed.
+  `git branch -d the_local_branch` will delete a local branch that you had by the given name. Make sure you dont have any loose ends in the branch or a delete won't be allowed.
    After deleting the local branch, if you wish to delete the remote branch of the same name, use:
 
   `git push origin :the_remote_branch` but be careful while using this.
