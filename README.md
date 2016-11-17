@@ -137,7 +137,7 @@ Branches exist in github to enable you to work on different features simultaneou
 
 4. Add the files you changed : `git add file_name` (avoid using `git add .`). This is called "staging" the files.
 
-5. Commit your changes `git commit -a -m "Message briefly explaining the feature"`. [Commits all the staged files](https://gist.github.com/sakshamsaxena/5c83df15bc2b17f3c72399860b31924b) (`-a` stands for committing all staged files). You can skip the `-a` switch and mention files to be committed otherwise.
+5. Commit your changes `git commit -m "Message briefly explaining the feature"`. 
 
 6. Push to your repo `git push origin branch-name`
 
