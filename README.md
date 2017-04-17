@@ -6,7 +6,7 @@ Starting your own project with others? Learn about the [Basic Workflow](https://
 
 <hr>
 
-##Table of Contents:
+## Table of Contents:
 * [Setting Up Git/Github on your machine](https://github.com/chhavip/Git-Guide/blob/master/Setting%20Up.md)
 
 * [Common Terms](#common-terms)
@@ -29,7 +29,7 @@ Starting your own project with others? Learn about the [Basic Workflow](https://
 
 
 
-##Common Terms
+## Common Terms
 Some of the basic terms used while working with git are:
 * **Repository** : A basic folder or a collection of files that represents one project. The name of this repository is **Git-Guide**. When you clone, you clone an entire repository and every repository is identified by a unique URL.
 
@@ -56,7 +56,7 @@ Some of the basic terms used while working with git are:
 
 
 
-##Set Up
+## Set Up
 In order to set up the user through terminal:
 
 `git config --global user.name <name>`
@@ -65,7 +65,7 @@ In order to set up the user through terminal:
 
 This is the user your commits and PR will be shown through.
 
-##Forking a Project and Making Changes
+## Forking a Project and Making Changes
 In order to work on an existing project that is not owned by you, follow the following steps:
 
 1. `Fork` the project from the respective repository. This will redirect you to your fork of the project which is basically a copy of the original project but you are its owner.
@@ -97,7 +97,7 @@ style="height:75px;">
   NOTE: This by default pushes all your local branches to remote with the same name. We will go through branching later.
 
 
-##Setting up Upstream
+## Setting up Upstream
 When a repository is cloned, it has a default remote called `origin` that points to your fork on GitHub, not the original repository it was forked from. To keep track of the original repository, you should add another remote named `upstream`:
 
 1. Open terminal or git bash in your local repository and type:
@@ -125,7 +125,7 @@ When a repository is cloned, it has a default remote called `origin` that points
    This will give you an exact copy of the current remote, but make sure you don't have any local changes.
 
 
-##Branching and Pull Requests
+## Branching and Pull Requests
 
 Branches exist in github to enable you to work on different features simultaneously without they interfering with each other and also to preserve the master branch. Usually the master branch of your project should be kept clean and no feature should be developed directly in the master branch.  Follow the following steps to create branches and be able to sync them:
 
@@ -145,7 +145,7 @@ This will push the changes you made to your fork on github under the branch name
 
 To have the owner of the original project review your changes, create a Pull Request explaining the changes you made. If it is satisfactory, it will be merged with the original project.
 
-###Common Branch Commands:
+### Common Branch Commands:
 
   `git branch` will give you all the branches your local repository has.
 
@@ -156,7 +156,7 @@ To have the owner of the original project review your changes, create a Pull Req
 
   `git push origin :the_remote_branch` but be careful while using this.
 
-##Squashing Commits
+## Squashing Commits
 Often it is required while contributing that your entire feature change is in the form of one single commit, this is where squashing comes in. Be aware of the type of commits you are trying to squash. There can be two:
 * Commits in your local repository
 * Commits you have already pushed to remote
@@ -176,7 +176,7 @@ The above two instruction will locally squash the number of commits you chose to
 
 This is a forced update that makes the remote repository squash the commits into one.
 
-###Fixing PR when other changes get Merged leading to Conflicts
+### Fixing PR when other changes get Merged leading to Conflicts
 This is in continuation with requirement of having a single commit in your PR, suppose you did some work and submitted a PR to the main repository but before your request could be merged, changes were made by other developers in the repository and now your PR presents merge conflicts. You could fetch the work, resolve merge conflicts and push again but that will lead to `MERGE COMMIT` that is undesirable at times. The flow below can be followed to prevent the same:
 
 This assumes the following:
@@ -195,7 +195,7 @@ The steps to follow:
 * Force push to your branch to update the PR by using `git push --force origin my_branch`
 
 
-##Undoing Commits
+## Undoing Commits
 Undoing commits means to remove the last commit you made from your history tree. This is not needed usually but more in the case a commit was made by mistake or was not complete. The following steps should usually be followed before having pushed to remote repository but you can force push your changes to reflect them on the remote.
 Now, getting down to undoing commits and the different scenarios:
 ```  
@@ -203,7 +203,7 @@ Now, getting down to undoing commits and the different scenarios:
         ↑
       master
 ```
-###Completely Removing the last Commit
+### Completely Removing the last Commit
 Suppose C was your last commit and you want to go back to B, removing any work that you done on the way from B to C.
 The command for that is:
 `git reset --hard HEAD~1`
@@ -215,7 +215,7 @@ The result is:
     master
 ```
 
-###Keeping the work of the last Commit
+### Keeping the work of the last Commit
 Now if you want just remove the commit but keep all the work you had done till that commit then starting from:
 ```
    (F)

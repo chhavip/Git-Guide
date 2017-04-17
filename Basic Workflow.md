@@ -1,10 +1,10 @@
 
-#Git Guide for Collaborative Work
+# Git Guide for Collaborative Work
 
-##Introduction
+## Introduction
 This page will outline a basic workflow to use when working on collaborative projects, wherein one person sets up the initial project and others are able to work on the same. Let us assume the situtation where there are three people Mo, Meggie and Darius who need to work on a project together and would like to use git/github for collaboration. Assuming they all have gitbash(windows) or git in terminal(linux) or on Mac, these are the steps to follow:
 
-##Setting Up The Project
+## Setting Up The Project
 Only one person needs to create the initial project and push it to the remote. Let us assume it is going to be Mo.
 
 ### Mo's Work:
@@ -32,7 +32,7 @@ Only one person needs to create the initial project and push it to the remote. L
 
 That was it! Now all three, Mo, Darius and Meggie have a syncronised copy of the project and can start working locally. To push their changes to the remote they will need to follow the **Synchronisation** process as described below.
 
-##Synchronising the Work
+## Synchronising the Work
 Git is very particular about how you collaborate with others and thus has a strict protocol to follow when uploading your work to the remote server:
 1. You need to pull the work done on the remote server. You **cannot** push your local changes until and unless you have all the changes made on the remote repository.
 2. Add the files you need to send.
