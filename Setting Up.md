@@ -1,20 +1,20 @@
-##Setting Up git in your machine
+## Setting Up git in your machine
 
 If you don't already have github installed in your machines, follow the following steps to enable controlling your projects through git (These are instructions to install git and not specific to github, can be used with any version control).
 
-###Windows
+### Windows
 
 Install git for windows from [here](http://git-scm.com/download/win). Your download will start automatically.
 
-###Ubuntu
+### Ubuntu
 
 For instructions on installing git for different Unix flavors see [Download for Linux and Unix](https://git-scm.com/download/linux).
 
-###Mac
+### Mac
 
 Install OSX Git installer from [here](http://git-scm.com/download/mac). Your download will start automatically.
 
-##After installation
+## After installation
 
 Now that you have git installed on your machine you should first set your name and email address.  This is important because every Git commit uses this information.
 
