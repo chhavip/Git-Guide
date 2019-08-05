@@ -31,8 +31,8 @@ Starting your own project with others? Learn about the [Basic Workflow](https://
 
 ##Common Terms
 Some of the basic terms used while working with git are:
-* **Repository** : A basic folder or a collection of files that represents one project. The name of this repository is **Git-Guide**. When you clone, you clone an entire repository and every repository is identified by a unique URL.
-
+* **Repository** : A basic folder or a collection of files that represents one project being tracked by git. The name of this repository is **Git-Guide**. When you clone, you clone an entire repository and every repository is identified by a unique URL.
+                   One important note is the difference between a project and a repository. In project, there is nothing like version control system but in a repository, all changes are being tracked by git, hence there is a presence of version control system in it. 
 * **Local Repository** : The project folder which exists in your machine, locally. It is where you make your changes and push them to the github repository. No one can make changes to your local repository directly other than yourself, you need to sync (connect) this local repository with a repository on github (or any VCS system) in order to push and pull changes.
 
 * **Remote Repository** : This is the respository hosted on github (or any other VCS) to which your local repository is connected. You push your changes to this and others working on the same project can see your changes. Only those with write permissions to this repository can make direct changes to it. Many people can make changes to this repository and you can pull those changes to your local repository and push your own to this. A single local repository can be connected to multiple remote repositories. Remote repositories are referred by keywords like **origin** and **upstream**.
