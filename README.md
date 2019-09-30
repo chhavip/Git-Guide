@@ -6,7 +6,7 @@ Starting your own project with others? Learn about the [Basic Workflow](https://
 
 <hr>
 
-##Table of Contents:
+##Table of Contents(How to get started with git):
 * [Setting Up Git/Github on your machine](https://github.com/chhavip/Git-Guide/blob/master/Setting%20Up.md)
 
 * [Common Terms](#common-terms)
@@ -257,4 +257,4 @@ There are two cases where merge conflicts occur
 * A file is modified by one or the other user while deleted by the other
 
 ##Disclaimer:
-This guide is aimed particularly at people starting open source contribution for the first time and aims to familiarise them with required patterns and expected contribution behaviour.
+This guide is aimed particularly at people starting open source contribution for the first time and aims to familiarise them with required patterns and expected contribution behaviour.Hope you guys like it✌
