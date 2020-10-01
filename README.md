@@ -57,7 +57,7 @@ Some of the basic terms used while working with git are:
 
 
 ##Set Up
-In order to set up the user through terminal:
+In order to set up the user through terminal, follow these steps:
 
 `git config --global user.name <name>`
 
